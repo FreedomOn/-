@@ -1,1 +1,85 @@
 /* pages/mine/mine.wxss */
+.container11{
+  background: #efefef;
+  width: 100%;
+  height: 100vh;
+
+  
+}
+.box{
+  width: 100%;
+  height: 100%;
+}
+.herder{
+  width: 100%;
+  height: 30vh;
+  background-color: white;
+  border-bottom: 30rpx solid #efefef ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding-bottom: 100rpx;
+
+}
+.herderimg{
+  width: 200rpx;
+  height: 200rpx;
+  margin:auto;
+}
+.headertxt{
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.content{
+  background-color: white;
+  width: 100%;
+}
+.contenttxt{
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
+.contenttime{
+  width: 96%;
+  margin-left: 2%;
+  font-size: 22rpx;
+  font-weight: 400;
+  border-bottom: 10rpx solid #efefef;
+  padding-bottom: 20rpx;
+}
+.bottom{
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  align-content: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.bottomleft{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items:center;
+}
+.img{
+  width: 60rpx;
+  height: 60rpx;
+}
+.num{
+  margin-left: 3%;
+}
+.btn{
+  width: 200rpx;
+  height: 60rpx;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 60rpx;
+}

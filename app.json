@@ -1,20 +1,44 @@
 {
   "pages":[
-    "pages/load/load",
+   
+  
     "pages/login/login",
     "pages/register/register",
     "pages/square/square",
     "pages/mine/mine",
-    "pages/commit/commit",
-    "pages/bottom_menu/bottom_menu",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/commit/commit"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#9B9B9B",
+    "selectedColor": "#7ED321",
+    "backgroundColor": "#F8F8F8",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/square/square",
+        "text": "树洞广场",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index1.png"
+      },
+      {
+        "pagePath": "pages/commit/commit",
+        "text": "发表树洞",
+        "iconPath": "/images/add.png",
+        "selectedIconPath": "/images/add1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的 ",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/me1.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

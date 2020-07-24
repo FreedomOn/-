@@ -1,2 +1,11 @@
 <!--pages/commit/commit.wxml-->
-<text>pages/commit/commit.wxml</text>
+<view class="textarea">
+  <textarea placeholder="发点东西吧~~~"  class="textInput"  bindinput="textarerInput" value="{{textarea}}"></textarea>
+
+</view>
+  <view class="send" bindtap="send"> 
+    发送
+  </view>
+  <!-- <view class="send" bindtap="clearInputEvent"> 
+    qingkong
+  </view> -->

@@ -1,1 +1,71 @@
 /* pages/square/square.wxss */
+page{
+background-color: #efefef;
+}
+.content{
+  background-color: #efefef;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;  
+}
+.box{
+  width: 100%;
+  background-color: #fff;
+  padding-top: 30rpx;
+  border-bottom: 20rpx solid #efefef;
+}
+.box :last-child{
+  border-bottom: none;
+}
+.first{
+  width: 100%;
+  height: 150rpx;
+  margin-left: 4%;
+  margin-right: 4%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+}
+.shouname{
+  color: blue;
+  font-size: 32rpx;
+}
+.showtime{
+  font-size: 24rpx;
+}
+.tel{
+   margin-top: 4%;
+}
+.person{
+  margin-left: 5%;
+}
+.second{
+  width: 92%;
+  margin: auto;
+  padding-bottom: 3%;
+  border-bottom: 5rpx solid #efefef;
+}
+.third{
+  width: 92%;
+  margin: auto;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+.like{
+  width: 50rpx;
+  height: 50rpx;
+}
+.num{
+  margin-left: 3%;
+}

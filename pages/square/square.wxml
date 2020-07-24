@@ -1,2 +1,23 @@
 <!--pages/square/square.wxml-->
-<text>pages/square/square.wxml</text>
+<scroll-view scroll-y="true" class="content">
+	<view class="box"  wx:for="{{dataList}}" wx:key="index">
+		<view class="first">
+			<image class="img" src="{{item.headimg}}"></image>
+			<view class="person">
+				<view class="name">
+					<text class="shouname">{{item.username}}</text>
+				</view>
+				<view class="tel">
+					<text class="showtime">{{item.time}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="second">
+			<text class="txt">{{item.content}}</text>
+		</view>
+		<view class="third">
+			<image class="like" src="{{item.islike ==1 ? '/images/zan1.png' : '/images/zan.png'}}" bindtap="changeImg" data-index="{{index}}"></image>
+			<text class="num" wx:if ="{{item.num !=0}}">{{item.num}}</text>
+		</view>
+	</view>
+</scroll-view>

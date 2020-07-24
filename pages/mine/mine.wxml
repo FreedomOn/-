@@ -1,2 +1,29 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<scroll-view scroll-y="true" class="container11">
+	<view class="box">
+		<view class="herder">
+			<image src="{{avatarurl}}" class="herderimg"></image>
+			<text class="headertxt">{{username}}</text>
+			<view>
+				<button bindtap="loginout">退出登录</button>
+			</view>
+		</view>
+		<view class="content" wx:for="{{dataList}}"  wx:key="index" >
+			<view class="contenttxt">
+				<text class="txtsty">{{item.content}}</text>
+			</view>
+			<view class="contenttime">
+				{{item.time}}
+			</view>
+			<view class="bottom">
+				<view class="bottomleft">
+					<image class="img" src="{{item.zanurl}}"></image>
+					<text class="num">{{item.num}}</text>
+				</view>
+				<view class="btn" bindtap="delete" data-index="{{index}}" >
+					<text>  删除</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>

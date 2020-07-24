@@ -1,2 +1,25 @@
 <!--pages/register/register.wxml-->
-<text>pages/register/register.wxml</text>
+<view class="content">
+  <view class="first">
+    <input id="name" placeholder="用户名" placeholder-class="plas" class="inputs" type="text" 
+    bindinput="usernameInput"></input>
+  </view>
+   <view class="second">
+    <input id="phone"  placeholder="手机号"  placeholder-class="plas" class="inputs" type="number"
+    bindinput="phoneNumberInput"></input>
+  </view>
+   <view class="third">
+    <input id="pasword"  placeholder="密码"  placeholder-class="plas" class="inputs" type="password"
+    bindinput="passwordInput"></input>
+  </view>
+   <view  class="four"> 
+    <input id="passwordAck" placeholder="确认密码"  placeholder-class="plas" class="inputs" type="password"
+    bindinput="checkPsdInput" ></input>
+  </view>
+  <view id="btn" class="click" bindtap="register">
+       注册
+  </view>
+  <view class="login" bindtap="tologin">
+    <text class="txt">已有账号，点我登录</text>
+  </view>
+</view>

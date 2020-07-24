@@ -1,0 +1,16 @@
+<view>
+  <view class="first">
+    <input placeholder="用户名/邮箱/手机号" class="inputs" type="text" bindinput="userInput"></input>
+  </view>
+  <view class="second">
+    <input placeholder="登录密码" class="inputs" type="password"  bindinput="psdInput"></input>
+  </view>
+  <view class="click" bindtap="login">登录</view>
+  <view wx:if="{{canIUse}}"  class="click" >
+     <button class="btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button> 
+  </view>
+  <view wx:else class="click">请升级微信版本</view>
+  <view class="login" bindtap="toRegister">
+    <text class="text">还没有账号？点我注册</text>
+  </view>
+</view>
